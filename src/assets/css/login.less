@@ -1,0 +1,110 @@
+.login {
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/bg_login.png);
+    overflow: hidden;
+    background-size: cover;
+
+    .main {
+        position: relative;
+        width: 80%;
+        height: 80%;
+        top: 5%;
+        left: 10%;
+
+        .icon_login {
+            position: absolute;
+            top: 5%;
+            width: 100%;
+            height: 30%;
+
+            ._icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            ._title {
+                margin-top: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-size: 20px;
+                font-family: Source Han Sans SC;
+                font-weight: 500;
+                color: rgba(255, 255, 255, 1);
+                line-height: 1.5em;
+            }
+        }
+    }
+}
+
+#form_login {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(243, 242, 250, 1);
+    border-radius: 19px;
+
+    h3 {
+        font-size: 20px;
+        font-family: Source Han Sans SC;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 1);
+        // line-height: 2em;
+    }
+
+    .config_form,
+    #login-form-submit {
+        width: 250px;
+        height: 53px;
+        margin-top: 15px;
+    }
+}
+
+.config_form {
+    display: flex;
+    background: rgba(204, 204, 204, 0.2);
+
+    i {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: 50%;
+
+        }
+    }
+
+    input {
+        width: 80%;
+        border: none;
+        font-family: Source Han Sans SC;
+        font-weight: 700;
+        background: transparent;
+        
+        &::placeholder {
+            color: rgba(194, 194, 194, 1);
+        }
+    }
+
+}
+
+#login-form-submit {
+    height: 20%;
+    background: rgba(92, 105, 249, 1);
+    border-radius: 42px;
+    font-size: 16px;
+    font-family: Source Han Sans SC;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+input:focus{outline:none;}

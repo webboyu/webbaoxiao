@@ -2,6 +2,13 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import ElementUI from 'element-ui'
+
+import './styles.scss'
+
+Vue.use(ElementUI)
+
+import '@/plugins/vant'
 
 Vue.config.productionTip = false
 
