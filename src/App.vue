@@ -12,6 +12,7 @@
 body, html{
   width: 100%;
   height: 100%;
+  background: rgba(238, 238, 238, 1);
 }
 #app {
   width: 100%;

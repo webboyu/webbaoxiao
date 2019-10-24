@@ -10,6 +10,9 @@ Vue.use(ElementUI)
 
 import '@/plugins/vant'
 
+import Scroller from '@/components/Scroller'
+Vue.component('Scroller' , Scroller);
+
 Vue.config.productionTip = false
 
 new Vue({

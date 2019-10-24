@@ -7,18 +7,53 @@ const routes = [{
     path: '/',
     // name: 'home',
     component: () => import('@/views/Home'),
-    // children:[
-    //   {
-    //     path:'homepage',
-    //     name:'homepage',
-    //     component:()=> import('@/view/HomePage') 
-    //   }
-    // ]
-  }, {
+    children: [{
+        path: '/',
+        redirect: '/homepage'
+      },
+      {
+        path: 'homepage',
+        name: 'homepage',
+        component: () => import('@/views/HomePage'),
+      },
+    ]
+  },
+  {
     path: '/login',
     name: 'login',
     component: () => import('@/views/Login')
   },
+  {
+    path: '/bxgl',
+    name: 'bxgl',
+    component: () => import('@/views/BXGL'),
+    children:[
+      {
+        path:'/bxgl',
+        redirect:'/bxgl/injihua'
+      },
+      {
+        path:'injihua',
+        name:'injihua',
+        component:()=>import('@/components/InJiHua')
+      },
+      {
+        path:'outjihua',
+        name:'outjihua',
+        component:()=>import('@/components/OutJiHua')
+      }
+    ]
+  },
+  {
+    path:'/detailbx',
+    name:'detailbx',
+    component:()=> import('@/views/DetailBX')
+  },
+  {
+    path:'/addinbx',
+    name:'addinbx',
+    component:() => import('@/views/AddInBX')
+  }
 
 ]
 
